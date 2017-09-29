@@ -19,7 +19,7 @@ for this precautions is uncovenient and subjected to errors.
 A proposed solution is to fully alias all classes and methods of
 `std::filesystem` to another namespace, here named `std::u8filesystem`,
 so the methods will always treat `std::string` as UTF-8 encoded.
-Classes are inheriting their corrispective in `std::filesystem`, not
+Classes are inheriting their corresponding in `std::filesystem`, not
 adding any field or virtual method, to offer full interoperability. Also
 same names of classes and methods are kept to make it a drop-in
 replacement solution.
