@@ -30,12 +30,12 @@ path::path(fs::path &&p) noexcept
 }
 
 path::path(const char *path)
-    : fs::path(_W(std::string(path)))
+    : fs::path(U8ToW(std::string(path)))
 {
 }
 
 path::path(const std::string & path)
-    : fs::path(_W(path))
+    : fs::path(U8ToW(path))
 {
 }
 
