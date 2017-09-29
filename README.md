@@ -53,4 +53,7 @@ std::wstring U8ToW(const char *string)
 }
 ```
 
+The helper is still incomplete and currently being tested on Windows
+platform only.
+
    [C++17]: http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html
