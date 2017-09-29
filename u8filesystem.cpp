@@ -29,8 +29,13 @@ path::path(fs::path &&p) noexcept
 {
 }
 
-path::path(const std::string & string)
-    : fs::path(_W(string))
+path::path(const char *path)
+    : fs::path(_W(std::string(path)))
+{
+}
+
+path::path(const std::string & path)
+    : fs::path(_W(path))
 {
 }
 

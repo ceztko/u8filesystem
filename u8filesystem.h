@@ -14,11 +14,12 @@ namespace std
         {
         public:
             path();
+            path(const char* path);
+            path(const std::string &string);
             path(const path &path);
             path(path &&path) noexcept;
             path(const filesystem::path &path);
             path(filesystem::path &&path) noexcept;
-            path(const std::string &string);
 
             inline std::string string() const
             {
